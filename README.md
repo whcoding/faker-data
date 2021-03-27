@@ -12,6 +12,7 @@ git clone https://github.com/whcoding/faker-data.git
 # 进入目录
 cd /path/to/faker-data
 
+# 安装依赖
 composer install 
 ```
 
@@ -21,21 +22,16 @@ composer install
 vendor/bin/phinx init
 ```
 
-
 其他命令具体参考 [phinx中文文档](https://tsy12321.gitbooks.io/phinx-doc)
 
 
-
-
+---
 
 Faker 生成中文数据 [其他语言](https://github.com/fzaninotto/Faker/tree/master/src/Faker/Provider)
 
 ```
 $faker = Factory::create('zh_CN');
 ```
-
-
-
 
 Faker 方法总结 [原地址](https://blog.csdn.net/u010496966/article/details/94172566)
 ```
