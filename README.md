@@ -20,6 +20,20 @@ composer install
 ```
 # 初始化 phinx 
 vendor/bin/phinx init
+
+# 初始化完成后会自动创建数据库配置文件 phinx.php
+```
+
+
+创建迁移脚本: 
+```
+php vendor/bin/phinx create MyNewMigration
+```
+
+
+创建Seed类: 
+```
+php vendor/bin/phinx seed:create UserSeeder
 ```
 
 其他命令具体参考 [phinx中文文档](https://tsy12321.gitbooks.io/phinx-doc)
@@ -27,11 +41,13 @@ vendor/bin/phinx init
 
 ---
 
-Faker 生成中文数据 [其他语言](https://github.com/fzaninotto/Faker/tree/master/src/Faker/Provider)
+Faker 生成中文数据 
 
 ```
 $faker = Factory::create('zh_CN');
 ```
+
+生成 [其他语言](https://github.com/fzaninotto/Faker/tree/master/src/Faker/Provider) 数据
 
 Faker 方法总结 [原地址](https://blog.csdn.net/u010496966/article/details/94172566)
 ```
