@@ -41,13 +41,14 @@ php vendor/bin/phinx seed:create UserSeeder
 
 ---
 
-Faker 生成中文数据 
-
+Faker 生成中文数据
 ```
 $faker = Factory::create('zh_CN');
 ```
 
 生成 [其他语言](https://github.com/fzaninotto/Faker/tree/master/src/Faker/Provider) 数据
+
+---
 
 Faker 方法总结 [原地址](https://blog.csdn.net/u010496966/article/details/94172566)
 
