@@ -50,6 +50,8 @@ $faker = Factory::create('zh_CN');
 生成 [其他语言](https://github.com/fzaninotto/Faker/tree/master/src/Faker/Provider) 数据
 
 Faker 方法总结 [原地址](https://blog.csdn.net/u010496966/article/details/94172566)
+
+基础方法: 
 ```
 随机数：randomDigit             // 7
 不为空随机数：randomDigitNotNull      // 5
@@ -68,7 +70,7 @@ Faker 方法总结 [原地址](https://blog.csdn.net/u010496966/article/details/
 asci码随机替换：asciify('Hello ***') // 'Hello R6+'
 正则匹配后生成：regexify('[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}'); // sm0@y8k96a.ej
 ```
-
+文本: 
 ```
 单词：word                                             // 'aut'
 单词组：words($nb = 3, $asText = false)                  // array('porro', 'sed', 'magni')
@@ -79,6 +81,7 @@ asci码随机替换：asciify('Hello ***') // 'Hello R6+'
 文本内容：text($maxNbChars = 200)                          // 'Fuga totam reiciendis qui architecto fugiat nemo. Consequatur recusandae qui cupiditate eos quod.'
 ```
 
+姓名:
 ```
 称谓： title($gender = null|'male'|'female')     // 'Ms.'
 男士称谓：titleMale                                 // 'Mr.'
@@ -91,6 +94,7 @@ asci码随机替换：asciify('Hello ***') // 'Hello R6+'
 字：lastName                                  // 'Zulauf'
 ```
 
+城市:
 ```
 城市前缀：cityPrefix                          // 'Lake'
 详细地址：secondaryAddress                    // 'Suite 961'
@@ -109,16 +113,19 @@ asci码随机替换：asciify('Hello ***') // 'Hello R6+'
 经度：longitude($min = -180, $max = 180)  // 86.211205
 ```
 
+电话号码:
 ```
 电话号码：phoneNumber             // '201-886-0269 x3767'
 免费电话号码：tollFreePhoneNumber     // '(888) 937-7238'
 E164电话号码：e164PhoneNumber     // '+27113456789'
 ```
 
+文本内容:
 ```
 文本内容：realText($maxNbChars = 200, $indexSize = 2)
 ```
 
+时间:
 ```
 unixTime($max = 'now')                // 58781813
 dateTime($max = 'now', $timezone = null) // DateTime('2008-04-25 08:37:17', 'UTC')
@@ -142,7 +149,7 @@ century                               // 'VI'
 timezone                              // 'Europe/Paris'
 ```
 
-
+互联网:
 ```
 邮箱：email                   // 'tkshlerin@collins.com'
 安全邮箱：safeEmail               // 'king.alford@example.org'
@@ -163,6 +170,7 @@ ipv6地址：ipv6                    // '8e65:933d:22ee:a232:f1c1:2741:1f10:117c
 MAC地址：macAddress              // '43:85:B7:08:10:CA'
 ```
 
+用户代理:
 ```
 用户代理：userAgent              // 'Mozilla/5.0 (Windows CE) AppleWebKit/5350 (KHTML, like Gecko) Chrome/13.0.888.0 Safari/5350'
 谷歌：chrome                 // 'Mozilla/5.0 (Macintosh; PPC Mac OS X 10_6_5) AppleWebKit/5312 (KHTML, like Gecko) Chrome/14.0.894.0 Safari/5312'
